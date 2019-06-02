@@ -1,8 +1,8 @@
 package com.sort;
 
 /**
- * @ClassName: DataChecker
- * @Description: 排序算法对数器
+ * @ClassName: selectSort
+ * @Description: 选择排序算法
  * @author Deicide
  * @date 2019年6月2日 下午8:21:56
  * 
@@ -10,7 +10,11 @@ package com.sort;
 public class selectSort
 {
 	/**
-	 * @Title: ${generateRandomArray} @Description: ${生成数组} @param @return @throws
+	 * @Title: ${main} 
+	 * @Description: ${主函数} 
+	 * @param 
+	 * @return 
+	 * @throws
 	 */
 	public static void main(String[] args)
 	{
@@ -42,7 +46,11 @@ public class selectSort
 	}
 
 	/**
-	 * @Title: ${generateRandomArray} @Description: ${生成数组} @param @return @throws
+	 * @Title: ${sort} 
+	 * @Description: ${选择排序} 
+	 * @param ${int[] arr} 
+	 * @return 
+	 * @throws
 	 */
 	public static void sort(int[] arr)
 	{
