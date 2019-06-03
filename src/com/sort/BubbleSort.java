@@ -60,7 +60,7 @@ public class BubbleSort
 	{
 		for (int i = a.length - 1 ; i >-1 ; i--)
 		{
-			System.out.print(a[ i ]);
+			System.out.print(a[ i ]+"  ");
 		}
 	}
 
