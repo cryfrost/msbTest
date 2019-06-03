@@ -18,8 +18,7 @@ public class selectSort
 	 */
 	public static void main(String[] args)
 	{
-		int arr[] =
-		{ 5, 3, 6, 8, 1, 7, 9, 2, 4 };
+		int arr[] ={ 5, 3, 6, 8, 1, 7, 9, 2, 4 };
 
 		for (int i = 0; i < arr.length - 1; i++)
 		{
