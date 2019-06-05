@@ -27,8 +27,7 @@ public class InsertSort
 	 */
 	public static void main(String[ ] args)
 	{
-		// int a[] = { 9 , 3 , 1 , 4 , 6 , 8 , 7 , 5 , 2 };
-		int a[] = { 1 , 5 , 7 , 4 };
+		int a[] ={ 9 , 3 , 1 , 4 , 6 , 8 , 7 , 5 , 2 };
 		sort3(a);
 		Print(a);
 	}
@@ -86,30 +85,8 @@ public class InsertSort
 		for (int i = 2 ; i <= a.length ; i++)
 		{
 			int temp = a[ i - 1 ];
-			for (int j = i - 2 ; j >= 0 ; j--)
-			{
-
-				if (a[ j ] > temp && j > 0)
-				{
-					a[ j + 1 ] = a[ j ];
-
-				}
-				else
-				{
-					a[ j + 1 ] = temp;
-					break;
-				}
-			}
-		}
-	}
-
-	static void sort4(int[ ] a)
-	{
-		for (int i = 2 ; i <= a.length ; i++)
-		{
-			int temp = a[ i - 1 ];
 			int j = i - 2;
-			while (j > 0 && a[ j ] > temp)
+			while (j >=0 && a[ j ] > temp)
 			{
 				a[ j + 1 ] = a[ j ];
 				j--;
