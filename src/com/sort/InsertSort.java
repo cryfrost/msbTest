@@ -75,7 +75,7 @@ public class InsertSort
 	/**
 	 * 
 	* @Title: sort3
-	* @Description: 插入排序 不用swap交换
+	* @Description: 插入排序 不用swap交换 数据后移，temp插到相应位置
 	* @param @param a     
 	* @return void   
 	* @throws
@@ -105,7 +105,7 @@ public class InsertSort
 	* @return void   
 	* @throws
 	 */
-	static void Swap(int[ ] a , int i , int j)
+	public static void Swap(int[ ] a , int i , int j)
 	{
 		int temp = a[ i ];
 		a[ i ] = a[ j ];
@@ -120,7 +120,7 @@ public class InsertSort
 	* @return void   
 	* @throws
 	 */
-	static void Print(int[ ] a)
+	public static void Print(int[ ] a)
 	{
 		for (int i = a.length - 1 ; i > -1 ; i--)
 		{
