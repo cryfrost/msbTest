@@ -2,6 +2,8 @@ package com.check;
 
 import java.util.Arrays;
 import java.util.Random;
+
+import com.sort.QuickSort;
 import com.sort.selectSort;
 
 /**
@@ -47,7 +49,7 @@ public class DataChecker
 		System.arraycopy(arr, 0, arr2, 0, arr.length);
 
 		Arrays.sort(arr);
-		selectSort.sort(arr2);
+		QuickSort.Sort(arr2,0,arr.length-1 );
 
 		boolean same = true;
 		for (int i = 0; i < arr.length; i++)

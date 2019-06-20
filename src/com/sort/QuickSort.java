@@ -37,7 +37,7 @@ public class QuickSort
 	* @return void   
 	* @throws
 	 */
-	static void Sort(int[ ] arr , int leftBound , int rightBound)
+	public static void Sort(int[ ] arr , int leftBound , int rightBound)
 	{
 		if (leftBound >= rightBound)
 			return;
@@ -68,9 +68,9 @@ public class QuickSort
 				left++;
 			while (left <=right&&arr[ right ] >pivot)
 				right--;
-			System.out.print("left  " + left + "   right  " + right + "   arr:");
-			InsertSort.Print(arr);
-			System.out.println("");
+//			System.out.print("left  " + left + "   right  " + right + "   arr:");
+//			InsertSort.Print(arr);
+//			System.out.println("");
 			if (left < right)
 				InsertSort.Swap(arr , left , right);
 		}
