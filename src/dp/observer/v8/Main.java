@@ -12,6 +12,7 @@ package dp.observer.v8;
 import java.util.ArrayList;
 import java.util.List;
 
+
 /*
  * 加入多个观察者与被观察者 类似vb.net 事件驱动 大多数时候，我们处理事件时，需要事件源对象 事件也可以形成继承体系
  */
@@ -23,6 +24,10 @@ class Child
 		observers.add(new Dad( ));
 		observers.add(new Mum( ));
 		observers.add(new Dog( ));
+		//hook callback function
+		observers.add((e) -> {
+			System.out.println("PPP");
+		});
 	}
 
 	public boolean isCry( )
@@ -97,7 +102,7 @@ class Mum implements Observer
 {
 	public void hug( )
 	{
-		System.out.println("dad feeding...");
+		System.out.println("dad hugging...");
 	}
 
 	@Override
@@ -111,7 +116,7 @@ class Dog implements Observer
 {
 	public void wang( )
 	{
-		System.out.println("dad feeding...");
+		System.out.println("dad wanging...");
 	}
 
 	@Override
@@ -130,5 +135,10 @@ class Dog implements Observer
 */
 public class Main
 {
-
+	public static void main(String[ ] args)
+	{
+		Child child = new Child( );
+		// do sth
+		child.wakeUp( );
+	}
 }
