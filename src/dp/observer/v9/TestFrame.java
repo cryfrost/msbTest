@@ -24,6 +24,12 @@ import java.awt.event.WindowEvent;
 */
 public class TestFrame extends Frame
 {
+
+	/** 
+	* @Fields serialVersionUID : TODO
+	*/ 
+	private static final long serialVersionUID = -6736255167843524327L;
+
 	public void launch() {
 		Button b=new Button("press me");
 		b.addActionListener(new MyActionListener());

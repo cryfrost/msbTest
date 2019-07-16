@@ -38,7 +38,7 @@ class Child
 	public void wakeUp( )
 	{
 		cry = true;
-		wakeUpEvent event = new wakeUpEvent(System.currentTimeMillis( ) , "bed");
+		wakeUpEvent event = new wakeUpEvent(System.currentTimeMillis( ) , "bed",new Child());
 		for (Observer o : observers)
 		{
 			o.actionOnWakeUp(event);
@@ -58,7 +58,7 @@ class wakeUpEvent extends Event<Child>
 	String loc;
 	Child source;
 
-	public wakeUpEvent(long timestamp , String loc)
+	public wakeUpEvent(long timestamp , String loc,Child source)
 	{
 		this.timestamp = timestamp;
 		this.loc = loc;
