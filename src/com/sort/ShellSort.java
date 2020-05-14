@@ -26,7 +26,7 @@ public class ShellSort
 	* @return void   
 	* @throws
 	 */
-	public void main(String[ ] args)
+	public static void main(String[ ] args)
 	{
 		int arr[] = { 9 , 6 , 11 , 3 , 5 , 12 , 8 , 7 , 10 , 15 , 14 , 4 , 1 , 13 , 2 };
 
@@ -81,7 +81,7 @@ public class ShellSort
 			{
 				for (int j = i ; j > gap - 1 ; j -= gap)
 				{
-					if (arr[ i ] < arr[ i - gap ])
+					if (arr[ j ] < arr[ j - gap ])
 						InsertSort.Swap(arr , j , j - gap);
 				}
 			}
